@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "library"
+version = "0.1.0"
+description = ""
+authors = ["A-V-tor <avtorca4@gmail.com>"]
+readme = "README.md"
+packages = [{include = "library"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "4.1.5"
+djangorestframework = "^3.14.0"
+djoser = "2.1.0"
+pytest-django = "^4.5.2"
+pytest-cov = "^4.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+blue = "^0.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "library.settings"
+python_files = ["test_*.py", "*_test.py", "testing/python/*.py"]
