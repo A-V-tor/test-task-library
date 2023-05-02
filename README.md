@@ -45,6 +45,18 @@
 ```
 python -m pip install -r requirements.txt
 ```
+
+### миграции
+```
+./manage.py makemigrations
+./manage.py migrte
+```
+
+### запуск
+```
+./manage.py runserver
+```
+
 <h3>Ендпоинты</h3>
 
 * http://localhost:8000/api/auth/users/  - создание пользователей
