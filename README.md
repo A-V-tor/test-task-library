@@ -49,7 +49,7 @@ python -m pip install -r requirements.txt
 ### миграции
 ```
 ./manage.py makemigrations
-./manage.py migrte
+./manage.py migrate
 ```
 
 ### запуск
@@ -63,7 +63,7 @@ python -m pip install -r requirements.txt
 
 * http://127.0.0.1:8000/auth/token/login/  - получение токена
 
-* http://localhost:8000/api/auth/users/api/books/ 
+* http://localhost:8000/api/auth/users/api/books/
 
 * http://localhost:8000/api/auth/users/api/books/1/
 
